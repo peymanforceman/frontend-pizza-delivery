@@ -106,4 +106,50 @@
         align-items: center;
     }
 
+    @media screen and (max-width: 2000px) {
+        .cart {
+            right: 30%;
+        }
+    }
+
+    @media screen and (max-width: 1380px) {
+        .cart {
+            right: 22%;
+        }
+    }
+
+    @media screen and (max-width: 973px) {
+        .cart {
+            right: 10%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .cart {
+            right: 5%;
+        }
+
+        .box {
+            width: 300px;
+        }
+
+        .btn-info {
+            padding: .0em 0;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .cart {
+            right: 0px;
+        }
+
+        .box {
+            width: 300px;
+        }
+
+        .btn-info {
+            padding: .0em 0;
+        }
+    }
+
 </style>

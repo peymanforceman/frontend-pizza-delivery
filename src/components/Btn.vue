@@ -52,4 +52,18 @@
         margin-left: .5em;
     }
 
+    @media screen and (max-width: 450px) {
+
+        .btn-info {
+            padding: .1em 0.1em;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .btn-info {
+            padding: .1em 0.1em;
+        }
+    }
+
 </style>
