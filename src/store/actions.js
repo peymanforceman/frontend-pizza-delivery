@@ -25,7 +25,6 @@ const actions = {
     },
     async getCurrentOrderInfo({commit}, id) {
         let response = await axios.post('order/' + id)
-        console.log(response)
         commit('UPDATE_CURRENT_ORDER', {response: response.data.data})
     },
     async reqOrderHistory({commit}) {
