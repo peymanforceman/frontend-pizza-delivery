@@ -7,7 +7,7 @@ import Vuesax from 'vuesax'
 
 require('@/store/subscriber')
 
-axios.defaults.baseURL = 'http://backpizza.test/api'
+axios.defaults.baseURL = 'https://fast-shore-12174.herokuapp.com/api'
 Vue.config.productionTip = false
 import 'vuesax/dist/vuesax.css'
 import 'material-icons/iconfont/material-icons.css';
