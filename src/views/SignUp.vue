@@ -57,7 +57,6 @@
             }),
 
             submit() {
-                console.log(this.form)
                 this.signUp(this.form).then(() => {
                     this.$router.replace({
                         name: 'login'
