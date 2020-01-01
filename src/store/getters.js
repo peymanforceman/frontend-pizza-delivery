@@ -13,7 +13,6 @@ const getters = {
     getSumProductsInCart: state => {
         let sum = 0;
         if(state.cartProducts.length>0){
-            console.log(state.cartProducts)
             state.cartProducts.forEach(product => {
                 sum += (product.quantity)
             })
