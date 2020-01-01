@@ -1,4 +1,4 @@
-# newpizza
+# Frontend Project for Online Pizza Delivery App
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

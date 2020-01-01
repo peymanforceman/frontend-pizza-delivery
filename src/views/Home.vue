@@ -1,18 +1,69 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <listOfProducts :products="getProducts"/>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+    import {mapGetters, mapActions} from 'vuex'
+    import listOfProducts from '../components/ListOfProducts';
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: "home",
+        components: {
+            listOfProducts,
+        },
+        computed: {
+            ...mapGetters({
+                getProducts: 'getProducts',
+            }),
+        },
+        methods: {
+            ...mapActions({
+                reqProducts: 'reqProducts',
+            }),
+            async updateProducts() {
+                await this.reqProducts()
+            }
+        },
+        mounted() {
+            this.updateProducts();
+        }
+    };
 </script>
+
+<style scoped>
+    .listOfProducts {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .product {
+        width: 300px;
+        background-color: #fff;
+        list-style: none;
+        box-sizing: border-box;
+        padding: 1em;
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 7px;
+    }
+
+    .product-name {
+        font-size: 1.2em;
+        font-weight: normal;
+    }
+
+    .product-price {
+        width: 100%;
+        align-self: flex-start;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5em;
+    }
+</style>
