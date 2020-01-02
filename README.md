@@ -2,7 +2,11 @@
 Pizza Online ordering platform made by Vue.js and Vuex. 
 This is a technical challenge for `innoscripta.com`
 
-Description : This project includes the Frontend of a pizza online ordering service.
+### Online version
+https://agile-sierra-22291.herokuapp.com/
+
+### Description
+This project includes the Frontend of a pizza online ordering service.
 
 The project made by Vue.js & Javascript
 
